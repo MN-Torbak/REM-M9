@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail"
+    android:background="@drawable/background_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentItemDetailRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_title" />
+
+        <TextView
+            android:id="@+id/detail_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragmentItemDetailRecyclerView" />
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_description_title" />
+
+        <ImageView
+            android:id="@+id/surface_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_surface"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_description"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/detail_surface_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="38dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/surface_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_description" />
+
+        <TextView
+            android:id="@+id/detail_surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher_background"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toEndOf="@id/surface_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_surface_title" />
+
+        <ImageView
+            android:id="@+id/numberofrooms_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_rooms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_surface"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/detail_numberofrooms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/numberofrooms_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_surface" />
+
+        <TextView
+            android:id="@+id/detail_numberofrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher_background"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toEndOf="@id/surface_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofrooms_title" />
+
+        <ImageView
+            android:id="@+id/numberofbedrooms_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_bedroom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofrooms"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/detail_numberofbedrooms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/numberofbedrooms_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofrooms" />
+
+        <TextView
+            android:id="@+id/detail_numberofbedrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher_background"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toEndOf="@id/numberofbedrooms_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofbedrooms_title" />
+
+        <ImageView
+            android:id="@+id/numberofbathrooms_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_bathroom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofbedrooms"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/detail_numberofbathrooms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/numberofbathrooms_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofbedrooms" />
+
+        <TextView
+            android:id="@+id/detail_numberofbathrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher_background"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toEndOf="@id/numberofbathrooms_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_numberofbathrooms_title" />
+
+        <ImageView
+            android:id="@+id/location_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_marker_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_numberofbathrooms"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/detail_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/location_img"
+            app:layout_constraintTop_toBottomOf="@+id/detail_numberofbathrooms" />
+
+        <TextView
+            android:id="@+id/detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher_background"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toEndOf="@id/location_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_address_title" />
+
+        <TextView
+            android:id="@+id/detail_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher_background"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintStart_toEndOf="@id/location_img"
+            app:layout_constraintTop_toBottomOf="@id/detail_address" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/Theme.MaterialComponents.DayNight"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_city"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/detail_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context="com.googlemap.googlemap.MapsActivity" />
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

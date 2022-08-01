@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Real Estate Manager</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <string name="error_unknown_error">An unknown error has occurred</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="play_services_update_cancelled">Play Services update cancelled</string>
+    <string name="developer_error">Developer error</string>
+    <string name="provider_error">Provider error</string>
+    <string name="user_account_merge_conflict">User account merge conflict</string>
+    <string name="attempting_to_sign_in_different_email">You are attempting to sign in a different email than previously provided</string>
+    <string name="attempting_to_sign_with_an_invalid_email_link">You are attempting to sign in with an invalid email link</string>
+    <string name="please_enter_your_email_to_continue_signing_in">Please enter your email to continue signing in</string>
+    <string name="you_must_open_the_email_link_on_the_same_device">You must open the email link on the same device.</string>
+    <string name="you_must_determine_if_you_want_continue_linking_or_complete_the_sign_in">You must determine if you want to continue linking or complete the sign in</string>
+    <string name="the_session_associated_with_this_sign_in_request_has_either_expired_or_was_cleared">The session associated with this sign-in request has either expired or was cleared</string>
+    <string name="the_user_account_has_been_disabled_by_an_administrator">The user account has been disabled by an administrator.</string>
+    <string name="generic_idp_recoverable_error">Generic IDP recoverable error.</string>
+    <string name="unknown_code">Unknown code: </string>
+
+    <string name="hint">Search by address</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+
+
+    <string-array name="add_numberOfRooms_property">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>
